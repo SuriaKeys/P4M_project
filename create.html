@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Створити збір</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Створіть свій збір</h1>
+  </header>
+  <main>
+    <form id="createForm">
+      <input type="hidden" id="category" name="category">
+      <label>
+        Назва збору:
+        <input type="text" id="title" name="title" required>
+      </label>
+      <label>
+        Сума (USD):
+        <input type="number" id="amount" name="amount" required>
+      </label>
+      <label>
+        Опис:
+        <textarea id="description" name="description" required></textarea>
+      </label>
+      <label>
+        Ваш email для PayPal:
+        <input type="email" id="email" name="email" required>
+      </label>
+      <button type="submit">Створити</button>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
